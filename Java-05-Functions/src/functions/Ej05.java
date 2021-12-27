@@ -22,12 +22,12 @@ public class Ej05 {
         while(num<21 && num>0){
             System.out.println("Introduce un número y te digo su factorial\nMin:1 Max:20");
             num=teclado.nextInt();
-            if(num<21 && num>0)System.out.println(Factoriales20(num));
+            if(num<21 && num>0)System.out.println(factoriales20(num));
         }
         
     }
     
-    public static long Factoriales20(int num){
+    public static long factoriales20(int num){
         long factorial=1;
         
         for(int i=2;i<=num;i++){
