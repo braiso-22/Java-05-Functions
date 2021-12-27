@@ -13,11 +13,11 @@ import java.util.Scanner;
  */
 public class Ej02 {
 
+    public static Scanner teclado = new Scanner(System.in);
+
     /**
      * @param args the command line arguments
      */
-    public static Scanner a = new Scanner(System.in);
-
     public static void main(String[] args) {
         menu();
     }
@@ -31,19 +31,19 @@ public class Ej02 {
             System.out.println("-  3. Area del triangulo   -");
             System.out.println("-  0. Salir                -");
             System.out.println("----------------------------");
-            num = a.nextInt();
+            num = teclado.nextInt();
             switch (num) {
                 case 1:
                     System.out.println("Introduce el radio del círculo: ");
-                    System.out.println("El area es: " + circulo(a.nextFloat()));
+                    System.out.println("El area es: " + circulo(teclado.nextFloat()));
                     break;
                 case 2:
                     System.out.println("Introduce el lado del cuadrado: ");
-                    System.out.println("El area es: " + cuadrado(a.nextFloat()));
+                    System.out.println("El area es: " + cuadrado(teclado.nextFloat()));
                     break;
                 case 3:
                     System.out.println("Introduce la base y altura del triangulo: ");
-                    System.out.println("El area es: " + triangulo(a.nextFloat(), a.nextFloat()));
+                    System.out.println("El area es: " + triangulo(teclado.nextFloat(), teclado.nextFloat()));
                     break;
                 case 0:
                     System.out.println("Saliendo...");
